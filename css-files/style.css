@@ -144,9 +144,10 @@ menu ul li{
     color: #222;
     margin-bottom: 1rem;
 }
-.hero-title p{
+.hero-title p {
     font-size: 1rem;
     font-weight: 400;
+    line-height: 2rem;
     color: gray;
     margin-bottom: 4rem;
 }
@@ -279,4 +280,58 @@ menu ul li{
     font-size: 1rem;
     color: #a39f9f;
     margin-bottom: 1.5rem;
+}
+/************ portfolio-section *************/
+.portfolio-section{
+        background-image: url(/images/portfolio-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+ }
+.portfolio-blogs{
+    display: flex;
+    flex-wrap: wrap;
+}
+.portfoli-wedget{
+    width: 30%;
+    height: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    position: relative;
+}
+.portfoli-wedget img{
+    width: 100%;
+}
+.portfoli-wedget:hover .p-widgetTitle{
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+}
+.p-widgetTitle {
+    display: block;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    height: 0;
+    background-color: rgb(58 53 52 / 45%);
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+.p-widgetTitle h2 {
+    display: block;
+    font-size: 1.4rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+.p-widgetTitle p {
+    font-size: 1rem;
+    display: block;
+    color: #ddd;
+    line-height: 1.5rem;
+    padding: 0rem 3rem;
 }
